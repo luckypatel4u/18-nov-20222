@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+    *{
+      margin: 0;
+      padding: 0;  
+    }
+    #banner{
+        background: linear-gradient( rgba(0,0,0,0.5),#009688), url(https://i.ytimg.com/vi/vMDsPBaNIiw/maxresdefault.jpg);
+        background-size: cover;
+        background-position: center;
+        height: 100vh;
+    }
+    .banner_text{
+        text-align: center;
+        color: #fff;
+        padding-top: 180px;
+    }
+    .banner_text h1{
+        font-size: 130px;
+    
+    }
+    .banner_text p{
+        font-size: 20px;
+        font-style: italic;
+    }
+    .banner-btn{
+     margin: 70px auto 0;
+    }
+    .banner-btn a{
+      width: 150px;
+      text-decoration: none;
+      display: inline-block;
+      margin: 0 10px;
+      padding: 12px 0;
+      color: white;
+      border: .5px solid #fff;
+     position: relative;
+     z-index: 1;
+     transform: color 0.5s;
+    }
+    .banner-btn a span{
+    width: 0%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #fff;
+    z-index: -1;
+    transition: 0.5s;
+    }
+    .banner-btn a:hover span {
+    width: 100%;
+
+    }
+    .banner-btn a:hover{
+        color :#000
+    }
+    #sidenav{
+        width: 250px;
+        height: 100vh;
+        position: fixed;
+        right: 0;
+        top: 0;
+        background: #009688;
+        z-index: 2;
+    }
+    nav ul li {
+        list-style: none;
+        margin: 50px 20px;
+    }
+    nav ul li a{
+        text-decoration: none;
+        color:#fff;
+    }
+    #manubtn{
+        width: 50px;
+        height: 50px;
+        background: #009688;
+        text-align: center;
+        position: fixed;
+        right: 30px;
+        top: 20px;
+        border-radius: 3px;
+        z-index: 3;
+        cursor: pointer;    
+    }
+    #manubtn img{
+        width: 20px;
+        margin-top: 15px;
+    }
+</style>
+</head>
+<body>
+    <section id="banner">
+ <div class="banner_text">
+    <h1> hair studio</h1>
+    <p>Style Your Hair Is Style Your Life </p>
+    <div class="banner-btn">
+        <a href="#"><span></span>Find Out</a>
+        <a href="#"><span></span> read More</a>
+    </div>
+ </div>
+          
+    </section>
+    <div id="sidenav">
+        <nav>
+            <ul>
+                <li><a href="#">HOME</a> </li>
+                <li><a href="#">FEATURES</a> </li> 
+                <li><a href="#">SERVICES</a> </li>
+                <li><a href="#">TESTIMONIALS</a> </li>
+                <li><a href="#">MEET US</a> </li>
+
+            </ul>
+        </nav>
+    </div> 
+    <div id="manubtn">
+        <img src="https://cdn2.iconfinder.com/data/icons/bold-ui/100/hamburger-512.png" id="manu">
+    </div>       
+    <script>
+        var manubtn = document.getElementById("manubtn")
+        var sidenav =  document.getElementById("sidenav")
+        var manu =  document.getElementById("manu")
+    
+    manubtn.oneclick = function()
+{
+    if(sidenav.style.right=="-250px")
+    {
+        sidenav.style.right="0";
+    }
+
+else{
+    sidenav.style.right="-250px";
+}
+}
+    </script>
+</body>
+</html>
