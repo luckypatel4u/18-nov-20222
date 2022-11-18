@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Document</title>
 
     <style>
@@ -63,7 +63,7 @@
         color :#000
     }
     #sidenav{
-        width: 250px;
+        width: 150px;
         height: 100vh;
         position: fixed;
         right: 0;
@@ -78,22 +78,6 @@
     nav ul li a{
         text-decoration: none;
         color:#fff;
-    }
-    #manubtn{
-        width: 50px;
-        height: 50px;
-        background: #009688;
-        text-align: center;
-        position: fixed;
-        right: 30px;
-        top: 20px;
-        border-radius: 3px;
-        z-index: 3;
-        cursor: pointer;    
-    }
-    #manubtn img{
-        width: 20px;
-        margin-top: 15px;
     }
 </style>
 </head>
@@ -120,25 +104,6 @@
             </ul>
         </nav>
     </div> 
-    <div id="manubtn">
-        <img src="https://cdn2.iconfinder.com/data/icons/bold-ui/100/hamburger-512.png" id="manu">
-    </div>       
-    <script>
-        var manubtn = document.getElementById("manubtn")
-        var sidenav =  document.getElementById("sidenav")
-        var manu =  document.getElementById("manu")
     
-    manubtn.oneclick = function()
-{
-    if(sidenav.style.right=="-250px")
-    {
-        sidenav.style.right="0";
-    }
-
-else{
-    sidenav.style.right="-250px";
-}
-}
-    </script>
 </body>
 </html>
